@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ title }} 
+{% endblock %}
+
+{% block body %}
+<h1 class="mt-5 mb-3">Welcome to the Contact Page</h1>
+<a href="{{ path('new_contact') }}" class="btn btn-primary">Make a new Request</a>
+{% endblock %}
