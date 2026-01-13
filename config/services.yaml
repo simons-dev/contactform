@@ -21,3 +21,8 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+
+    # Adding the custom Command so it is available from cli with bin/console app:export-requests
+    App\Command\ExportRequestsCommand:
+        tags: ['console.command']
